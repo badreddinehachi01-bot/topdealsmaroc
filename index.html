@@ -4,48 +4,127 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🔥 Top Deals Maroc</title>
-<style>
-body{font-family:Arial;margin:0;background:#f1f1f1;direction:rtl;}
-header{background:linear-gradient(90deg,#ff6b35,#f7931e);color:white;padding:20px;text-align:center;font-size:24px;box-shadow:0 4px 10px rgba(0,0,0,0.2);}
-header h1{margin:0;font-weight:bold;}
-.nav{display:flex;justify-content:center;background:#222;padding:10px 0;flex-wrap:wrap;}
-.nav button{background:none;border:none;color:white;padding:12px 20px;cursor:pointer;font-size:16px;border-radius:5px;margin:0 5px;transition:0.3s;}
-.nav button:hover,.nav button.active{background:#25D366;}
-.container{padding:25px;max-width:1200px;margin:0 auto;}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:20px;}
-.card{background:white;border-radius:15px;padding:15px;text-align:center;box-shadow:0 5px 20px rgba(0,0,0,0.1);transition:0.3s;}
-.card:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,0,0,0.2);}
-.card img{width:100%;height:180px;object-fit:cover;border-radius:10px;margin-bottom:10px;}
-.price{color:#25D366;font-size:20px;font-weight:bold;margin:10px 0;}
-.btn{background:#25D366;color:white;padding:12px;border:none;border-radius:8px;cursor:pointer;width:100%;font-size:16px;font-weight:bold;transition:0.3s;}
-.btn:hover{background:#128C7E;transform:scale(1.02);}
-footer{text-align:center;padding:20px;background:#333;color:white;margin-top:40px;}
 
-/* للهاتف */
-@media (max-width: 768px) {
-  .products {grid-template-columns:1fr;gap:15px;padding:10px;}
-  header {font-size:20px;padding:15px;}
-  .nav button {padding:10px 12px;font-size:14px;margin:2px;}
-  .container {padding:15px;}
-  .card {padding:12px;}
+<style>
+body{
+  font-family:Arial;
+  margin:0;
+  background:#f1f1f1;
+  direction:rtl;
+}
+
+header{
+  background:linear-gradient(90deg,#ff6b35,#f7931e);
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+header h1{
+  margin:0;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  border-radius:15px;
+  padding:15px;
+  text-align:center;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.features{
+  text-align:right;
+  margin-top:10px;
+  font-size:15px;
+}
+
+.price{
+  color:#25D366;
+  font-size:22px;
+  font-weight:bold;
+  margin:10px 0;
+}
+
+.btn{
+  background:#25D366;
+  color:white;
+  padding:12px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  width:100%;
+  font-size:16px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#333;
+  color:white;
+  margin-top:40px;
 }
 </style>
 </head>
+
 <body>
-<!-- نفس المحتوى -->
-<header><h1>🛒 Top Deals Maroc</h1><p>أحسن العروض في المغرب ✅</p></header>
-<div class="nav">
-<button onclick="filter('all')" class="active">الكل</button>
-<button onclick="filter('tech')">إلكترونيات</button>
-<button onclick="filter('access')">إكسسوارات</button>
-</div>
+
+<header>
+<h1>🛒 Top Deals Maroc</h1>
+<p>أفضل العروض في المغرب</p>
+</header>
+
 <div class="container">
+
 <div class="products">
-<div class="card tech"><img src="https://via.placeholder.com/220x180/0066cc/ffffff?text=Smart+Watch"><h3>ساعة ذكية</h3><p class="price">199 DH</p><button class="btn" onclick="order('ساعة ذكية')">اطلب واتساب</button></div>
-<div class="card tech"><img src="https://via.placeholder.com/220x180/cc0000/ffffff?text=Headphones"><h3>سماعات</h3><p class="price">149 DH</p><button class="btn" onclick="order('سماعات')">اطلب واتساب</button></div>
-<div class="card access"><img src="https://via.placeholder.com/220x180/9932cc/ffffff?text=Case"><h3>كفر تلفون</h3><p class="price">79 DH</p><button class="btn" onclick="order('كفر تلفون')">اطلب واتساب</button></div>
-</div></div>
-<footer>📞 06 35 70 11 84 | © 2026 Top Deals Maroc</footer>
+
+<!-- سماعات P9 -->
+<div class="card">
+
+<img src="Screenshot_2026-03-22-22-55-40-936.jpg">
+
+<h3>🎧 سماعات بلوتوث P9</h3>
+
+<div class="features">
+🔊 صوت عالي ونقي <br>
+🔋 بطارية تدوم حتى 8 ساعات <br>
+📱 بلوتوث سريع وسهل الربط <br>
+🎧 مريحة للاستعمال الطويل <br>
+📦 خفيفة وسهلة الحمل
+</div>
+
+<p class="price">90 DH</p>
+
+<button class="btn" onclick="order('سماعات بلوتوث P9')">
+اطلب عبر واتساب
+</button>
+
+</div>
+
+</div>
+</div>
+
+<footer>
+📞 06 35 70 11 84 | © 2026 Top Deals Maroc
+</footer>
 
 <script>
 function order(product){
@@ -54,17 +133,7 @@ function order(product){
   var url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
   window.open(url, '_blank');
 }
-function filter(category){
-  let cards = document.querySelectorAll('.card');
-  document.querySelectorAll('.nav button').forEach(btn => btn.classList.remove('active'));
-  event.target.classList.add('active');
-  cards.forEach(card=>{
-    card.style.display = (category === 'all' || card.classList.contains(category)) ? 'block' : 'none';
-  });
-}
 </script>
-  <img src="Screenshot_2026-03-22-22-55-52-751.jpg" width="300">
-<img src="Screenshot_2026-03-22-22-56-12-776.jpg" width="300">
-<img src="Screenshot_2026-03-22-22-55-40-936.jpg" width="300">
+
 </body>
 </html>
